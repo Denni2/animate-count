@@ -1,0 +1,4 @@
+create a program that counts up and animates the count up 
+
+1. create a for loop with counter addition
+2. display each value added up to the last incrementaly
