@@ -1,18 +1,15 @@
+let val = 1000;
+let x = 0;
 
-countNext = () => {
-    let x  = 100;
-    let z = 0;
+increaseCounter = () => {
+    setInterval(() => {
+        if (x != val){
 
-    setTimeout(function () {
-        for (y = 0; y < x; y++){
-            z += 1;
-            if (z != x){
-                console.log(z);
-            }
-        }
+            document.getElementById('display').innerHTML = x;
+            x++;
+        }   
         
-        
-    }, 1000);
+    }, 10);
 }
 
-countNext();
+increaseCounter()
