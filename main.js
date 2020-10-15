@@ -1,11 +1,15 @@
-let val = 1000;
-let x = 0;
+let val = 100;
+let x = 1;
+let infos = document.getElementById('linear-percents');
 
 increaseCounter = () => {
     setInterval(() => {
-        if (x != val){
+        if (x <= val){
 
             document.getElementById('display').innerHTML = x;
+            infos.style.width = x + '%';
+            
+            
             x++;
         }   
         
